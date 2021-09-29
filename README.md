@@ -7,9 +7,7 @@ Gpay WaaS SDK
 ```sh
 yarn add https://github.com/kimbai/react-native-gpay-waas-sdk
 ```
-
 or
-
 ```sh
 npm install --save https://github.com/kimbai/react-native-gpay-waas-sdk
 ```
@@ -17,14 +15,15 @@ npm install --save https://github.com/kimbai/react-native-gpay-waas-sdk
 ### Android Setup
 Adding the following to your android/app/build.gradle file
 
-
-  allprojects {
-    repositories {
-          flatDir {
-              dirs "$rootDir/../node_modules/react-native-gpay-waas-sdk/android/libs"
-          }
-      }
-  }
+```
+allprojects {
+  repositories {
+        flatDir {
+            dirs "$rootDir/../node_modules/react-native-gpay-waas-sdk/android/libs"
+        }
+    }
+}
+```
 
 ### iOS Setup
 ```sh
@@ -43,16 +42,16 @@ Step 2: init SDK when start app with appId (example 'ABCDE12345.com.cocoacasts.s
 
 ```js
 React.useEffect(() => {
-    GpayWaasSdk.initSDK(
-      'ABCDE12345.com.cocoacasts.scribbles_ios',
-      (result) => {
-        console.log(result);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
-  }, []);
+  GpayWaasSdk.initSDK(
+    'ABCDE12345.com.cocoacasts.scribbles_ios',
+    (result) => {
+      console.log(result);
+    },
+    (error) => {
+      console.log(error);
+    }
+  );
+}, []);
 ```
 
 ## Features
@@ -66,16 +65,16 @@ parameters:
 
 ```js
 React.useEffect(() => {
-    GpayWaasSdk.openSDK(
-      userId,
-      phoneNumber,
-      (result) => {
-        console.log(result);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+GpayWaasSdk.openSDK(
+  userId,
+  phoneNumber,
+  (result) => {
+    console.log(result);
+  },
+  (error) => {
+    console.log(error);
+  }
+);
 ```
 
 ## Contributing
