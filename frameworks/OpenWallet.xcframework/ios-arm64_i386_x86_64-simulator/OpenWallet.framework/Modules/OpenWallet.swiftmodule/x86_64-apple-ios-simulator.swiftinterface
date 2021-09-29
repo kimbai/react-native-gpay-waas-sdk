@@ -1,0 +1,89 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OpenWallet
+import AVFoundation
+import Foundation
+import LocalAuthentication
+import MobileCoreServices
+@_exported import OpenWallet
+import QuartzCore
+import Security
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+extension UIKit.UIView {
+  @objc override dynamic open func setValue(_ value: Any?, forUndefinedKey key: Swift.String)
+}
+extension UIKit.UIActivityIndicatorView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func addSubview(_ view: UIKit.UIView)
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func addSubview(_ view: UIKit.UIView)
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+}
+extension UIKit.UINavigationBar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+extension UIKit.UIToolbar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+extension UIKit.UITabBar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+extension UIKit.UIPickerView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+@objc public enum OpenWalletLang : Swift.Int, Swift.RawRepresentable {
+  case vietnamese
+  case english
+  public typealias RawValue = Swift.String
+  public var rawValue: OpenWallet.OpenWalletLang.RawValue {
+    get
+  }
+  public init?(rawValue: OpenWallet.OpenWalletLang.RawValue)
+}
+@objc public enum OpenWalletEnv : Swift.Int, Swift.RawRepresentable {
+  case development
+  case sandbox
+  case product
+  public typealias RawValue = Swift.String
+  public var rawValue: OpenWallet.OpenWalletEnv.RawValue {
+    get
+  }
+  public init?(rawValue: OpenWallet.OpenWalletEnv.RawValue)
+}
+@objc public enum OpenWalletTheme : Swift.Int, Swift.RawRepresentable {
+  case light
+  case dark
+  public typealias RawValue = Swift.String
+  public var rawValue: OpenWallet.OpenWalletTheme.RawValue {
+    get
+  }
+  public init?(rawValue: OpenWallet.OpenWalletTheme.RawValue)
+}
+@_inheritsConvenienceInitializers @objc public class OpenWalletResponseKey : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OpenWalletSDK : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: OpenWallet.OpenWalletSDK
+  @objc public func setupLanguage(_ lang: OpenWallet.OpenWalletLang)
+  @objc public func setupTheme(_ theme: OpenWallet.OpenWalletTheme)
+  @objc public func initializeWith(appId: Swift.String, theme: OpenWallet.OpenWalletTheme, language: OpenWallet.OpenWalletLang, enviroment: OpenWallet.OpenWalletEnv, onSuccess: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)? = nil, onError: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)? = nil)
+  @objc public func openSDKWith(userId: Swift.String, phoneNumber: Swift.String?, onSuccess: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?, onError: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc deinit
+}
+extension OpenWallet.OpenWalletLang : Swift.Equatable {}
+extension OpenWallet.OpenWalletLang : Swift.Hashable {}
+extension OpenWallet.OpenWalletEnv : Swift.Equatable {}
+extension OpenWallet.OpenWalletEnv : Swift.Hashable {}
+extension OpenWallet.OpenWalletTheme : Swift.Equatable {}
+extension OpenWallet.OpenWalletTheme : Swift.Hashable {}

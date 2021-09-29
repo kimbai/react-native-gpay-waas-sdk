@@ -1,0 +1,11 @@
+framework module OpenWallet {
+  umbrella header "OpenWallet.h"
+
+  export *
+  module * { export * }
+}
+
+module OpenWallet.Swift {
+    header "OpenWallet-Swift.h"
+    requires objc
+}
