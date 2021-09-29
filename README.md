@@ -17,15 +17,15 @@ npm install --save https://github.com/kimbai/react-native-gpay-waas-sdk
 ### Android Setup
 Adding the following to your android/app/build.gradle file
 
-```json
-allprojects {
-  repositories {
-        flatDir {
-            dirs "$rootDir/../node_modules/react-native-gpay-waas-sdk/android/libs"
-        }
-    }
-}
-```
+
+  allprojects {
+    repositories {
+          flatDir {
+              dirs "$rootDir/../node_modules/react-native-gpay-waas-sdk/android/libs"
+          }
+      }
+  }
+
 ### iOS Setup
 ```sh
 cd ios && pod install && cd ..
