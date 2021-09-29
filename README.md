@@ -20,7 +20,6 @@ Adding the following to your android/app/build.gradle file
 ```json
 allprojects {
   repositories {
-        // ...
         flatDir {
             dirs "$rootDir/../node_modules/react-native-gpay-waas-sdk/android/libs"
         }
