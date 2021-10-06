@@ -1,0 +1,118 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GpayWAAS
+import AVFoundation
+import CommonCrypto
+import Foundation
+import LocalAuthentication
+import MobileCoreServices
+import QuartzCore
+import SafariServices
+import Security
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+extension UIKit.UIView {
+  @objc override dynamic open func setValue(_ value: Any?, forUndefinedKey key: Swift.String)
+}
+extension UIKit.UIActivityIndicatorView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func addSubview(_ view: UIKit.UIView)
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func addSubview(_ view: UIKit.UIView)
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+}
+extension UIKit.UINavigationBar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+extension UIKit.UIToolbar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+extension UIKit.UITabBar {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+extension UIKit.UIPickerView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func insertSubview(_ view: UIKit.UIView, at index: Swift.Int)
+}
+@objc public enum GpayWAASSDKLang : Swift.Int, Swift.RawRepresentable {
+  case vietnamese
+  case english
+  public typealias RawValue = Swift.String
+  public var rawValue: GpayWAAS.GpayWAASSDKLang.RawValue {
+    get
+  }
+  public init?(rawValue: GpayWAAS.GpayWAASSDKLang.RawValue)
+}
+@objc public enum GpayWAASSDKEnv : Swift.Int, Swift.RawRepresentable {
+  case development
+  case sandbox
+  case product
+  public typealias RawValue = Swift.String
+  public var rawValue: GpayWAAS.GpayWAASSDKEnv.RawValue {
+    get
+  }
+  public init?(rawValue: GpayWAAS.GpayWAASSDKEnv.RawValue)
+}
+@objc public enum GpayWAASSDKTheme : Swift.Int, Swift.RawRepresentable {
+  case light
+  case dark
+  public typealias RawValue = Swift.String
+  public var rawValue: GpayWAAS.GpayWAASSDKTheme.RawValue {
+    get
+  }
+  public init?(rawValue: GpayWAAS.GpayWAASSDKTheme.RawValue)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GpayWAASSDKResponseKey : ObjectiveC.NSObject {
+  @objc public static let message: Swift.String
+  @objc public static let code: Swift.String
+  @objc public static let userStatus: Swift.String
+  @objc public static let userBalance: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GpayWAASSDKResponseCode : ObjectiveC.NSObject {
+  @objc public static let initFailed: Swift.String
+  @objc public static let phoneInvalidFormat: Swift.String
+  @objc public static let networkError: Swift.String
+  @objc public static let systemError: Swift.String
+  @objc public static let notActived: Swift.String
+  @objc public static let notLoggedIn: Swift.String
+  @objc public static let paymentFailed: Swift.String
+  @objc public static let userCancel: Swift.String
+  @objc public static let encryptError: Swift.String
+  @objc public static let accountLock: Swift.String
+  @objc public static let paymentPending: Swift.String
+  @objc public static let success: Swift.String
+  @objc public static let tokenExpired: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GpayWAASSDKUserStatus : ObjectiveC.NSObject {
+  @objc public static let notKyc: Swift.String
+  @objc public static let notLinkBank: Swift.String
+  @objc public static let active: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GpayWAASSDK : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: GpayWAAS.GpayWAASSDK
+  @objc public func setupLanguage(_ lang: GpayWAAS.GpayWAASSDKLang)
+  @objc public func setupTheme(_ theme: GpayWAAS.GpayWAASSDKTheme)
+  @objc public func initializeWith(appId: Swift.String, enviroment: GpayWAAS.GpayWAASSDKEnv, onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func homeOpen(userId: Swift.String, phoneNumber: Swift.String, onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func logout()
+  @objc public func getUserStatus(onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func getUserBalance(onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc deinit
+}
+extension GpayWAAS.GpayWAASSDKLang : Swift.Equatable {}
+extension GpayWAAS.GpayWAASSDKLang : Swift.Hashable {}
+extension GpayWAAS.GpayWAASSDKEnv : Swift.Equatable {}
+extension GpayWAAS.GpayWAASSDKEnv : Swift.Hashable {}
+extension GpayWAAS.GpayWAASSDKTheme : Swift.Equatable {}
+extension GpayWAAS.GpayWAASSDKTheme : Swift.Hashable {}

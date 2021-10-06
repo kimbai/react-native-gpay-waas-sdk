@@ -1,0 +1,4 @@
+framework module GpayWAAS {
+  header "GpayWAAS-Swift.h"
+  requires objc
+}

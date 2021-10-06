@@ -11,6 +11,7 @@ or
 ```sh
 npm install --save https://github.com/kimbai/react-native-gpay-waas-sdk
 ```
+this package require react-native >= 0.60
 
 ### Android Setup
 Adding the following to your android/app/build.gradle file
@@ -30,6 +31,12 @@ allprojects {
 cd ios && pod install && cd ..
 ```
 
+Then update your Info.plist with wanted permissions usage descriptions:
+```
+<key>NSCameraUsageDescription</key>
+<string>Need to access your camera to capture a photo and update profile picture.</string>
+```
+
 ## Usage
 
 Step 1: import sdk
@@ -46,9 +53,6 @@ React.useEffect(() => {
     'ABCDE12345.com.cocoacasts.scribbles_ios',
     (result) => {
       console.log(result);
-    },
-    (error) => {
-      console.log(error);
     }
   );
 }, []);
@@ -56,25 +60,52 @@ React.useEffect(() => {
 
 ## Features
 
-Open SDK
+### Open Home
 parameters:
  - userId: user identifier
  - phoneNumber: user's phone number
- - onSuccess: callback when open succeed
- - onError: callback when failed
+ - callback: callback when completed
 
 ```js
-React.useEffect(() => {
 GpayWaasSdk.openSDK(
   userId,
   phoneNumber,
   (result) => {
     console.log(result);
-  },
-  (error) => {
-    console.log(error);
   }
 );
+```
+
+### Setup Theme
+parameters:
+ - theme: 'dark' | 'light'
+
+```js
+GpayWaasSdk.setupTheme('dark');
+```
+
+### Setup Language
+parameters:
+ - language: 'vi' | 'en'
+
+```js
+GpayWaasSdk.setupLanguage('vi');
+```
+
+### Get User Status
+
+```js
+GpayWaasSdk.getUserStatus((result) => {
+  console.log(result);
+});
+```
+
+### Get User Balance
+
+```js
+GpayWaasSdk.getUserBalance((result) => {
+  console.log(result);
+});
 ```
 
 ## Contributing

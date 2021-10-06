@@ -1,58 +1,90 @@
 #import "GpayWaasSdk.h"
 #import <React/RCTLog.h>
 
-@import OpenWallet;
+@import GpayWAAS;
 
 @implementation GpayWaasSdk
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(initSDK:(NSString *)appId onSuccess:(RCTResponseSenderBlock)onSuccess onError:(RCTResponseSenderBlock)onError) {
+RCT_EXPORT_METHOD(initSDK:(NSString *)appId enviroment:(NSString *)enviroment callback:(RCTResponseSenderBlock)callback) {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[OpenWalletSDK sharedInstance] initializeWithAppId:appId
-                                                  theme:OpenWalletThemeDark
-                                               language:OpenWalletLangVietnamese
-                                             enviroment:OpenWalletEnvDevelopment
-                                              onSuccess:^(NSDictionary<NSString *,NSString *> * _Nullable object) {
-      if (object != nil) {
-        onSuccess(@[object]);
+    GpayWAASSDKEnv env;
+    if ([[enviroment lowercaseString] isEqualToString:@"development"]) {
+      env = GpayWAASSDKEnvDevelopment;
+    } else if ([[enviroment lowercaseString] isEqualToString:@"sandbox"]) {
+      env = GpayWAASSDKEnvSandbox;
+    } else {
+      env = GpayWAASSDKEnvProduct;
+    }
+    [[GpayWAASSDK sharedInstance] initializeWithAppId:appId
+                                           enviroment:env
+                                           onComplete:^(NSDictionary<NSString *,NSString *> *result) {
+      if (result != nil) {
+        callback(@[result]);
       } else {
-        onSuccess(@[]);
+        callback(@[]);
       }
-      
-      RCTLogInfo(@"[GpayWAASSDK] init SDK: %@", object);
-    } onError:^(NSDictionary<NSString *,NSString *> * _Nullable object) {
-      if (object != nil) {
-        onError(@[object]);
-      } else {
-        onError(@[]);
-      }
-      
-      RCTLogInfo(@"[GpayWAASSDK] init SDK error: %@", object);
     }];
   });
 }
 
-RCT_EXPORT_METHOD(openSDK:(NSString *)userId phoneNumber:(NSString *)phoneNumber onSuccess:(RCTResponseSenderBlock)onSuccess onError:(RCTResponseSenderBlock)onError) {
+RCT_EXPORT_METHOD(setupTheme:(NSString *)theme) {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[OpenWalletSDK sharedInstance] openSDKWithUserId:userId
-                                          phoneNumber:phoneNumber
-                                            onSuccess:^(NSDictionary<NSString *,NSString *> *object) {
-      if (object != nil) {
-        onSuccess(@[object]);
+    GpayWAASSDKTheme sdkTheme;
+    if ([[theme lowercaseString] isEqualToString:@"dark"]) {
+      sdkTheme = GpayWAASSDKThemeDark;
+    } else {
+      sdkTheme = GpayWAASSDKThemeLight;
+    }
+    [[GpayWAASSDK sharedInstance] setupTheme:sdkTheme];
+  });
+}
+
+RCT_EXPORT_METHOD(setupLanguage:(NSString *)language) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    GpayWAASSDKLang sdkLanguage;
+    if ([[language lowercaseString] isEqualToString:@"vi"]) {
+      sdkLanguage = GpayWAASSDKLangVietnamese;
+    } else {
+      sdkLanguage = GpayWAASSDKLangEnglish;
+    }
+    [[GpayWAASSDK sharedInstance] setupLanguage:sdkLanguage];
+  });
+}
+
+RCT_EXPORT_METHOD(homeOpen:(NSString *)userId phoneNumber:(NSString *)phoneNumber callback:(RCTResponseSenderBlock)callback) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[GpayWAASSDK sharedInstance] homeOpenWithUserId:userId phoneNumber:phoneNumber onComplete:^(NSDictionary<NSString *,NSString *> *result) {
+      if (result != nil) {
+        callback(@[result]);
       } else {
-        onSuccess(@[]);
+        callback(@[]);
       }
-      
-      RCTLogInfo(@"[GpayWAASSDK] open SDK: %@", object);
-    } onError:^(NSDictionary<NSString *,NSString *> *object) {
-      if (object != nil) {
-        onError(@[object]);
+    }];
+  });
+}
+
+RCT_EXPORT_METHOD(getUserStatus:(RCTResponseSenderBlock)callback) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[GpayWAASSDK sharedInstance] getUserStatusOnComplete:^(NSDictionary<NSString *,NSString *> *result) {
+      if (result != nil) {
+        callback(@[result]);
       } else {
-        onError(@[]);
+        callback(@[]);
       }
-      
-      RCTLogInfo(@"[GpayWAASSDK] open SDK error: %@", object);
+    }];
+  });
+}
+
+RCT_EXPORT_METHOD(getUserBalance:(RCTResponseSenderBlock)callback) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[GpayWAASSDK sharedInstance] getUserBalanceOnComplete:^(NSDictionary<NSString *,NSString *> *result) {
+      if (result != nil) {
+        callback(@[result]);
+      } else {
+        callback(@[]);
+      }
     }];
   });
 }
