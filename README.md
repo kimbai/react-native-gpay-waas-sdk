@@ -27,6 +27,7 @@ allprojects {
 ```
 
 ### iOS Setup
+
 ```sh
 cd ios && pod install && cd ..
 ```
@@ -35,6 +36,15 @@ Then update your Info.plist with wanted permissions usage descriptions:
 ```
 <key>NSCameraUsageDescription</key>
 <string>Need to access your camera to capture a photo and update profile picture.</string>
+```
+
+## Example
+
+```sh
+yarn
+yarn example ios
+or 
+yarn example android
 ```
 
 ## Usage
