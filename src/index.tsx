@@ -2,7 +2,7 @@ import { NativeModules } from 'react-native';
 
 const { GpayWaasSdk } = NativeModules;
 
-type GpayWaasSdkCallbackType = {
+export type GpayWaasSdkCallbackType = {
   code: number;
   message: string;
 };

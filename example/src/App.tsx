@@ -1,7 +1,7 @@
 import GpayWaasSdk, {
   GpayWaasSdkCallbackType,
 } from 'react-native-gpay-waas-sdk';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -25,10 +25,8 @@ export default function App() {
 
   const [userId, setUserId] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [userStatus, setUserStatus] =
-    useState<GpayWaasSdkCallbackType>(undefined);
-  const [userBalance, setUserBalance] =
-    useState<GpayWaasSdkCallbackType>(undefined);
+  const [userStatus, setUserStatus] = useState<GpayWaasSdkCallbackType>();
+  const [userBalance, setUserBalance] = useState<GpayWaasSdkCallbackType>();
 
   const getBalance = () => {
     GpayWaasSdk.getUserBalance((result) => {
