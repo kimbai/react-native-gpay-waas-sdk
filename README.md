@@ -55,12 +55,13 @@ Step 1: import sdk
 import GpayWaasSdk from "react-native-gpay-waas-sdk";
 ```
 
-Step 2: init SDK when start app with appId (example 'ABCDE12345.com.cocoacasts.scribbles_ios')
+Step 2: init SDK with enviroment
 
 ```js
+const env = 'development'; // 'development' | 'sandbox' | 'product',
 React.useEffect(() => {
   GpayWaasSdk.initSDK(
-    'ABCDE12345.com.cocoacasts.scribbles_ios',
+    env,
     (result) => {
       console.log(result);
     }
