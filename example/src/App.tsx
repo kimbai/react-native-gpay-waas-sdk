@@ -10,11 +10,9 @@ import {
   View,
 } from 'react-native';
 
-const APP_ID = 'ABCDE12345.com.cocoacasts.scribbles_ios';
-
 export default function App() {
   useEffect(() => {
-    GpayWaasSdk.initSDK(APP_ID, 'development', (result) => {
+    GpayWaasSdk.initSDK('development', (result) => {
       console.log(result);
       GpayWaasSdk.setupLanguage('vi');
       GpayWaasSdk.setupTheme('light');

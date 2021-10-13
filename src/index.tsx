@@ -9,7 +9,6 @@ export type GpayWaasSdkCallbackType = {
 
 type GpayWaasSdkType = {
   initSDK(
-    appId: string,
     enviroment: 'development' | 'sandbox' | 'product',
     callback: (result: GpayWaasSdkCallbackType) => void
   ): void;

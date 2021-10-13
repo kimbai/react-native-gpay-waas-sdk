@@ -103,11 +103,13 @@ extension UIKit.UIPickerView {
   @objc public static let sharedInstance: GpayWAAS.GpayWAASSDK
   @objc public func setupLanguage(_ lang: GpayWAAS.GpayWAASSDKLang)
   @objc public func setupTheme(_ theme: GpayWAAS.GpayWAASSDKTheme)
-  @objc public func initializeWith(appId: Swift.String, enviroment: GpayWAAS.GpayWAASSDKEnv, onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
-  @objc public func homeOpen(userId: Swift.String, phoneNumber: Swift.String, onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func initializeWith(enviroment: GpayWAAS.GpayWAASSDKEnv, onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func homeOpen(userId: Swift.String, phoneNumber: Swift.String, onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func logout()
-  @objc public func getUserStatus(onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
-  @objc public func getUserBalance(onComplete: ((_ object: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func getUserStatus(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func getUserBalance(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  public func getCurrentPhone() -> Swift.String
+  public func getCurrentUserId() -> Swift.String
   @objc deinit
 }
 extension GpayWAAS.GpayWAASSDKLang : Swift.Equatable {}

@@ -31,7 +31,7 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void initSDK(String appId, String env, Callback callback) {
+  public void initSDK(String env, Callback callback) {
     GpayWAASSDK.Enviroment sdkEnv;
     if (env.toLowerCase().equals("development")) {
       sdkEnv = GpayWAASSDK.Enviroment.DEVELOPMENT;
@@ -40,7 +40,7 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
     } else {
       sdkEnv = GpayWAASSDK.Enviroment.PRODUCT;
     }
-    GpayWAASSDK.initializeWith(this.getReactApplicationContext(), appId, sdkEnv, new GpayWAASSDK.onComplete() {
+    GpayWAASSDK.initializeWith(this.getReactApplicationContext(), sdkEnv, new GpayWAASSDK.onComplete() {
       @Override
       public void onComplete(HashMap<String, String> result) {
         if (result != null) {

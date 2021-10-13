@@ -214,8 +214,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 enum GpayWAASSDKLang : NSInteger;
 enum GpayWAASSDKTheme : NSInteger;
-@class NSString;
 enum GpayWAASSDKEnv : NSInteger;
+@class NSString;
 
 SWIFT_CLASS("_TtC8GpayWAAS11GpayWAASSDK")
 @interface GpayWAASSDK : NSObject
@@ -226,7 +226,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setupLanguage:(enum GpayWAASSDKLang)lang;
 - (void)setupTheme:(enum GpayWAASSDKTheme)theme;
-- (void)initializeWithAppId:(NSString * _Nonnull)appId enviroment:(enum GpayWAASSDKEnv)enviroment onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)initializeWithEnviroment:(enum GpayWAASSDKEnv)enviroment onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)homeOpenWithUserId:(NSString * _Nonnull)userId phoneNumber:(NSString * _Nonnull)phoneNumber onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)logout;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
@@ -608,8 +608,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 enum GpayWAASSDKLang : NSInteger;
 enum GpayWAASSDKTheme : NSInteger;
-@class NSString;
 enum GpayWAASSDKEnv : NSInteger;
+@class NSString;
 
 SWIFT_CLASS("_TtC8GpayWAAS11GpayWAASSDK")
 @interface GpayWAASSDK : NSObject
@@ -620,7 +620,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setupLanguage:(enum GpayWAASSDKLang)lang;
 - (void)setupTheme:(enum GpayWAASSDKTheme)theme;
-- (void)initializeWithAppId:(NSString * _Nonnull)appId enviroment:(enum GpayWAASSDKEnv)enviroment onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)initializeWithEnviroment:(enum GpayWAASSDKEnv)enviroment onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)homeOpenWithUserId:(NSString * _Nonnull)userId phoneNumber:(NSString * _Nonnull)phoneNumber onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)logout;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
@@ -1002,8 +1002,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 enum GpayWAASSDKLang : NSInteger;
 enum GpayWAASSDKTheme : NSInteger;
-@class NSString;
 enum GpayWAASSDKEnv : NSInteger;
+@class NSString;
 
 SWIFT_CLASS("_TtC8GpayWAAS11GpayWAASSDK")
 @interface GpayWAASSDK : NSObject
@@ -1014,7 +1014,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setupLanguage:(enum GpayWAASSDKLang)lang;
 - (void)setupTheme:(enum GpayWAASSDKTheme)theme;
-- (void)initializeWithAppId:(NSString * _Nonnull)appId enviroment:(enum GpayWAASSDKEnv)enviroment onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)initializeWithEnviroment:(enum GpayWAASSDKEnv)enviroment onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)homeOpenWithUserId:(NSString * _Nonnull)userId phoneNumber:(NSString * _Nonnull)phoneNumber onComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)logout;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;

@@ -17,9 +17,7 @@ RCT_EXPORT_METHOD(initSDK:(NSString *)appId enviroment:(NSString *)enviroment ca
     } else {
       env = GpayWAASSDKEnvProduct;
     }
-    [[GpayWAASSDK sharedInstance] initializeWithAppId:appId
-                                           enviroment:env
-                                           onComplete:^(NSDictionary<NSString *,NSString *> *result) {
+    [[GpayWAASSDK sharedInstance] initializeWithEnviroment:env onComplete:^(NSDictionary<NSString *,NSString *> *result) {
       if (result != nil) {
         callback(@[result]);
       } else {
