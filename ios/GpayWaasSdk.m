@@ -7,7 +7,7 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(initSDK:(NSString *)appId enviroment:(NSString *)enviroment callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(initSDK:(NSString *)enviroment callback:(RCTResponseSenderBlock)callback) {
   dispatch_async(dispatch_get_main_queue(), ^{
     GpayWAASSDKEnv env;
     if ([[enviroment lowercaseString] isEqualToString:@"development"]) {
