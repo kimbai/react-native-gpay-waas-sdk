@@ -212,10 +212,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
 enum GpayWAASSDKLang : NSInteger;
 enum GpayWAASSDKTheme : NSInteger;
 enum GpayWAASSDKEnv : NSInteger;
 @class NSString;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC8GpayWAAS11GpayWAASSDK")
 @interface GpayWAASSDK : NSObject
@@ -231,6 +234,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 - (void)logout;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)getUserBalanceOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)paymentWithAmount:(double)amount phoneNumber:(NSString * _Nonnull)phoneNumber userId:(NSString * _Nonnull)userId onComplete:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 @end
 
 
@@ -291,6 +295,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)userStatus SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull userBalance;)
 + (NSString * _Nonnull)userBalance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull paymentOrderId;)
++ (NSString * _Nonnull)paymentOrderId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull paymentTransactionId;)
++ (NSString * _Nonnull)paymentTransactionId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, GpayWAASSDKTheme, open) {
@@ -321,12 +329,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 @class UIView;
-@class NSNumber;
 
 @interface UICollectionView (SWIFT_EXTENSION(GpayWAAS))
 - (void)insertSubview:(UIView * _Nonnull)view atIndex:(NSInteger)index;
 - (void)addSubview:(UIView * _Nonnull)view;
 @end
+
+
 
 
 
@@ -606,10 +615,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
 enum GpayWAASSDKLang : NSInteger;
 enum GpayWAASSDKTheme : NSInteger;
 enum GpayWAASSDKEnv : NSInteger;
 @class NSString;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC8GpayWAAS11GpayWAASSDK")
 @interface GpayWAASSDK : NSObject
@@ -625,6 +637,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 - (void)logout;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)getUserBalanceOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)paymentWithAmount:(double)amount phoneNumber:(NSString * _Nonnull)phoneNumber userId:(NSString * _Nonnull)userId onComplete:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 @end
 
 
@@ -685,6 +698,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)userStatus SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull userBalance;)
 + (NSString * _Nonnull)userBalance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull paymentOrderId;)
++ (NSString * _Nonnull)paymentOrderId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull paymentTransactionId;)
++ (NSString * _Nonnull)paymentTransactionId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, GpayWAASSDKTheme, open) {
@@ -715,12 +732,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 @class UIView;
-@class NSNumber;
 
 @interface UICollectionView (SWIFT_EXTENSION(GpayWAAS))
 - (void)insertSubview:(UIView * _Nonnull)view atIndex:(NSInteger)index;
 - (void)addSubview:(UIView * _Nonnull)view;
 @end
+
+
 
 
 

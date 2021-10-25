@@ -21,6 +21,13 @@ type GpayWaasSdkType = {
   ): void;
   getUserStatus(callback: (result: GpayWaasSdkCallbackType) => void): void;
   getUserBalance(callback: (result: GpayWaasSdkCallbackType) => void): void;
+  paymentWithAmount(
+    amount: number,
+    phoneNumber: string,
+    userId: string,
+    callback: (result: GpayWaasSdkCallbackType) => void
+  ): void;
+  logout(): void;
 };
 
 export default GpayWaasSdk as GpayWaasSdkType;

@@ -2,7 +2,9 @@
 // swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GpayWAAS
 import AVFoundation
+import Combine
 import CommonCrypto
+import CryptoKit
 import Foundation
 import LocalAuthentication
 import MobileCoreServices
@@ -12,6 +14,7 @@ import Security
 import Swift
 import SystemConfiguration
 import UIKit
+import WebKit
 import _Concurrency
 extension UIKit.UIView {
   @objc override dynamic open func setValue(_ value: Any?, forUndefinedKey key: Swift.String)
@@ -75,6 +78,8 @@ extension UIKit.UIPickerView {
   @objc public static let code: Swift.String
   @objc public static let userStatus: Swift.String
   @objc public static let userBalance: Swift.String
+  @objc public static let paymentOrderId: Swift.String
+  @objc public static let paymentTransactionId: Swift.String
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GpayWAASSDKResponseCode : ObjectiveC.NSObject {
@@ -99,6 +104,7 @@ extension UIKit.UIPickerView {
   @objc public static let active: Swift.String
   @objc deinit
 }
+infix operator >>> : AdditionPrecedence
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GpayWAASSDK : ObjectiveC.NSObject {
   @objc public static let sharedInstance: GpayWAAS.GpayWAASSDK
   @objc public func setupLanguage(_ lang: GpayWAAS.GpayWAASSDKLang)
@@ -108,6 +114,7 @@ extension UIKit.UIPickerView {
   @objc public func logout()
   @objc public func getUserStatus(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func getUserBalance(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
+  @objc public func payment(amount: Swift.Double, phoneNumber: Swift.String, userId: Swift.String, onComplete: @escaping ((_ response: [Swift.String : Swift.String]?) -> Swift.Void))
   public func getCurrentPhone() -> Swift.String
   public func getCurrentUserId() -> Swift.String
   @objc deinit

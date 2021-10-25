@@ -1,8 +1,10 @@
 package vn.gpay.waas.sdk;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
@@ -116,6 +118,41 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
           map.putString("message", result.get("message"));
           callback.invoke(map);
         }
+      }
+    });
+  }
+
+  @ReactMethod
+  public void paymentWithAmount(double amount, String phoneNumber, String userId, Callback callback) {
+    AppCompatActivity activity = this.getCurrentActivity() != null && this.getCurrentActivity() instanceof AppCompatActivity ? (AppCompatActivity) this.getCurrentActivity() : null;
+    if (activity != null) {
+      GpayWAASSDK.getInstance().initPayment(activity, String.valueOf(amount), phoneNumber, userId, new GpayWAASSDK.onComplete() {
+        @Override
+        public void onComplete(HashMap<String, String> result) {
+          if (result != null) {
+            WritableMap map = new WritableNativeMap();
+            map.putString("code", result.get("code"));
+            map.putString("message", result.get("message"));
+            callback.invoke(map);
+          }
+        }
+      });
+    } else {
+      Toast.makeText(this.getCurrentActivity(), "Feature not supported", Toast.LENGTH_LONG).show();
+    }
+  }
+
+  @ReactMethod
+  public void logout() {
+    GpayWAASSDK.getInstance().logout(new GpayWAASSDK.onComplete() {
+      @Override
+      public void onComplete(HashMap<String, String> result) {
+//        if (result != null) {
+//          WritableMap map = new WritableNativeMap();
+//          map.putString("code", result.get("code"));
+//          map.putString("message", result.get("message"));
+//          callback.invoke(map);
+//        }
       }
     });
   }

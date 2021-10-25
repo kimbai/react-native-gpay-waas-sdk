@@ -68,6 +68,22 @@ export default function App() {
       >
         <Text style={styles.buttonTitle}>Show SDK</Text>
       </TouchableOpacity>
+      <View style={styles.space} />
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => {
+          GpayWaasSdk.paymentWithAmount(
+            10000,
+            phoneNumber,
+            userId,
+            (result) => {
+              console.log(result);
+            }
+          );
+        }}
+      >
+        <Text style={styles.buttonTitle}>Payment</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -81,6 +97,9 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     paddingVertical: 16,
+  },
+  space: {
+    height: 16,
   },
   input: {
     fontSize: 14,

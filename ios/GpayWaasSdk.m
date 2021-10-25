@@ -87,4 +87,22 @@ RCT_EXPORT_METHOD(getUserBalance:(RCTResponseSenderBlock)callback) {
   });
 }
 
+RCT_EXPORT_METHOD(paymentWithAmount:(double)amount phoneNumber:(NSString *)phoneNumber userId:(NSString *)userId callback:(RCTResponseSenderBlock)callback) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[GpayWAASSDK sharedInstance] paymentWithAmount:amount phoneNumber:phoneNumber userId:userId onComplete:^(NSDictionary<NSString *,NSString *> *result) {
+      if (result != nil) {
+        callback(@[result]);
+      } else {
+        callback(@[]);
+      }
+    }];
+  });
+}
+
+RCT_EXPORT_METHOD(logout) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[GpayWAASSDK sharedInstance] logout];
+  });
+}
+
 @end
