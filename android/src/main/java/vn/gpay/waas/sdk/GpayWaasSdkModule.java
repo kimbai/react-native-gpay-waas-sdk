@@ -126,7 +126,7 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
   public void paymentWithAmount(double amount, String phoneNumber, String userId, Callback callback) {
     AppCompatActivity activity = this.getCurrentActivity() != null && this.getCurrentActivity() instanceof AppCompatActivity ? (AppCompatActivity) this.getCurrentActivity() : null;
     if (activity != null) {
-      GpayWAASSDK.getInstance().initPayment(activity, String.valueOf(amount), phoneNumber, userId, new GpayWAASSDK.onComplete() {
+      GpayWAASSDK.getInstance().payment(activity, amount, phoneNumber, userId, new GpayWAASSDK.onComplete() {
         @Override
         public void onComplete(HashMap<String, String> result) {
           if (result != null) {
