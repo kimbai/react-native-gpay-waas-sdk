@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4AEDC0A270DD19200878EC0 /* GpayWAASSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AEDC09270DD19200878EC0 /* GpayWAASSDK.xcframework */; };
+		AB5FD75927352BD900C642DD /* GpayWAAS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5FD75827352BD900C642DD /* GpayWAAS.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libGpayWaasSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGpayWaasSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5FD75827352BD900C642DD /* GpayWAAS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GpayWAAS.xcframework; path = ../frameworks/GpayWAAS.xcframework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* GpayWaasSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpayWaasSdk.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* GpayWaasSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpayWaasSdk.m; sourceTree = "<group>"; };
-		C4AEDC09270DD19200878EC0 /* GpayWAASSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GpayWAASSDK.xcframework; path = ../Frameworks/GpayWAASSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AEDC0A270DD19200878EC0 /* GpayWAASSDK.xcframework in Frameworks */,
+				AB5FD75927352BD900C642DD /* GpayWAAS.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		ABE5B4202702E30E0050252A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4AEDC09270DD19200878EC0 /* GpayWAASSDK.xcframework */,
+				AB5FD75827352BD900C642DD /* GpayWAAS.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

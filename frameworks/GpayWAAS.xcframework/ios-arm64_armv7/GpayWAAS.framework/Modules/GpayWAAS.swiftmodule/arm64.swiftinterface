@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GpayWAAS
 import AVFoundation
 import Combine
@@ -111,12 +111,10 @@ infix operator >>> : AdditionPrecedence
   @objc public func setupTheme(_ theme: GpayWAAS.GpayWAASSDKTheme)
   @objc public func initializeWith(enviroment: GpayWAAS.GpayWAASSDKEnv, onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func homeOpen(userId: Swift.String, phoneNumber: Swift.String, onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
-  @objc public func logout()
+  @objc public func logout(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func getUserStatus(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func getUserBalance(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
-  @objc public func payment(amount: Swift.Double, phoneNumber: Swift.String, userId: Swift.String, onComplete: @escaping ((_ response: [Swift.String : Swift.String]?) -> Swift.Void))
-  public func getCurrentPhone() -> Swift.String
-  public func getCurrentUserId() -> Swift.String
+  @objc public func payment(amount: Swift.Double, refId: Swift.String?, embedData: Swift.String?, phoneNumber: Swift.String, userId: Swift.String, onComplete: @escaping ((_ response: [Swift.String : Swift.String]?) -> Swift.Void))
   @objc deinit
 }
 extension GpayWAAS.GpayWAASSDKLang : Swift.Equatable {}

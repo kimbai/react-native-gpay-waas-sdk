@@ -7,10 +7,26 @@ export type GpayWaasSdkCallbackType = {
   message: string;
 };
 
+export interface GpayWaasSdkGetUserStatusCallbackType
+  extends GpayWaasSdkCallbackType {
+  userStatus: string;
+}
+
+export interface GpayWaasSdkGetUserBalanceCallbackType
+  extends GpayWaasSdkCallbackType {
+  userBalance: string;
+}
+
+export interface GpayWaasSdkPaymentCallbackType
+  extends GpayWaasSdkCallbackType {
+  paymentOrderId: string;
+  paymentTransactionId: string;
+}
+
 type GpayWaasSdkType = {
   initSDK(
     enviroment: 'development' | 'sandbox' | 'product',
-    callback: (result: GpayWaasSdkCallbackType) => void
+    callback?: (result: GpayWaasSdkCallbackType) => void
   ): void;
   setupTheme(theme: 'dark' | 'light'): void;
   setupLanguage(language: 'vi' | 'en'): void;
@@ -19,15 +35,21 @@ type GpayWaasSdkType = {
     phoneNumber: string,
     callback: (result: GpayWaasSdkCallbackType) => void
   ): void;
-  getUserStatus(callback: (result: GpayWaasSdkCallbackType) => void): void;
-  getUserBalance(callback: (result: GpayWaasSdkCallbackType) => void): void;
-  paymentWithAmount(
+  getUserStatus(
+    callback: (result: GpayWaasSdkGetUserStatusCallbackType) => void
+  ): void;
+  getUserBalance(
+    callback: (result: GpayWaasSdkGetUserBalanceCallbackType) => void
+  ): void;
+  payment(
     amount: number,
+    refId: string,
+    embedData: string,
     phoneNumber: string,
     userId: string,
-    callback: (result: GpayWaasSdkCallbackType) => void
+    callback: (result: GpayWaasSdkPaymentCallbackType) => void
   ): void;
-  logout(): void;
+  logout(callback?: (result: GpayWaasSdkCallbackType) => void): void;
 };
 
 export default GpayWaasSdk as GpayWaasSdkType;

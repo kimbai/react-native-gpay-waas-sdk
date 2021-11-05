@@ -1,13 +1,11 @@
 package vn.gpay.waas.sdk;
 
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.react.bridge.Callback;
-import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -101,6 +99,7 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
           WritableMap map = new WritableNativeMap();
           map.putString("code", result.get("code"));
           map.putString("message", result.get("message"));
+          map.putString("userStatus", result.get("userStatus"));
           callback.invoke(map);
         }
       }
@@ -116,6 +115,7 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
           WritableMap map = new WritableNativeMap();
           map.putString("code", result.get("code"));
           map.putString("message", result.get("message"));
+          map.putString("userBalance", result.get("userBalance"));
           callback.invoke(map);
         }
       }
@@ -123,16 +123,18 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void paymentWithAmount(double amount, String phoneNumber, String userId, Callback callback) {
+  public void payment(double amount, String refId, String embedData, String phoneNumber, String userId, Callback callback) {
     AppCompatActivity activity = this.getCurrentActivity() != null && this.getCurrentActivity() instanceof AppCompatActivity ? (AppCompatActivity) this.getCurrentActivity() : null;
     if (activity != null) {
-      GpayWAASSDK.getInstance().payment(activity, amount, phoneNumber, userId, new GpayWAASSDK.onComplete() {
+      GpayWAASSDK.getInstance().payment(activity, amount, refId, embedData, phoneNumber, userId, new GpayWAASSDK.onComplete() {
         @Override
         public void onComplete(HashMap<String, String> result) {
           if (result != null) {
             WritableMap map = new WritableNativeMap();
             map.putString("code", result.get("code"));
             map.putString("message", result.get("message"));
+            map.putString("paymentOrderId", result.get("paymentOrderId"));
+            map.putString("paymentTransactionId", result.get("paymentTransactionId"));
             callback.invoke(map);
           }
         }
@@ -143,16 +145,15 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void logout() {
+  public void logout(Callback callback) {
     GpayWAASSDK.getInstance().logout(new GpayWAASSDK.onComplete() {
       @Override
       public void onComplete(HashMap<String, String> result) {
-//        if (result != null) {
-//          WritableMap map = new WritableNativeMap();
-//          map.putString("code", result.get("code"));
-//          map.putString("message", result.get("message"));
-//          callback.invoke(map);
-//        }
+        if (result != null) {
+          WritableMap map = new WritableNativeMap();
+          map.putString("code", result.get("code"));
+          callback.invoke(map);
+        }
       }
     });
   }

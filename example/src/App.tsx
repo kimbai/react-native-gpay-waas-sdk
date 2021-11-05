@@ -63,6 +63,8 @@ export default function App() {
         onPress={() => {
           GpayWaasSdk.homeOpen(userId, phoneNumber, (result) => {
             console.log(result);
+            getBalance();
+            getStatus();
           });
         }}
       >
@@ -72,8 +74,10 @@ export default function App() {
       <TouchableOpacity
         style={styles.button}
         onPress={() => {
-          GpayWaasSdk.paymentWithAmount(
+          GpayWaasSdk.payment(
             10000,
+            'refId',
+            'embedData',
             phoneNumber,
             userId,
             (result) => {

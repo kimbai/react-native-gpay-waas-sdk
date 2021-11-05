@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		YwqPWr/QGaDL8+cVhk/i2pmD3uU=
+		0R3RAp/qLG1MfJWj9qpbub+Nf0Q=
 		</data>
 		<key>DatePickerView.nib/objects-14.0+.nib</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>DatePickerView.nib/runtime.nib</key>
 		<data>
-		xnJ/BKFFUgce4Nfvxe9lhZPMOhc=
+		8oIOMlszWYjph+ccZ86kP/i8uL8=
 		</data>
 		<key>Headers/GpayWAAS-Swift.h</key>
 		<data>
-		+8U7xUm5P+wMmPWxtI+qr2fpmKk=
+		6AxLO+sNUX3LLTAjOcCVsBSZ7Po=
 		</data>
 		<key>Headers/GpayWAASSDK.h</key>
 		<data>
@@ -26,79 +26,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rjdERXS+UQpw0+1lKT0Q+/5qQIw=
+		zM4mG0J1oVOKS2kNXiOIt2Pj90g=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2p4ZbfSzySqdrbVkR18bDiqK0ck=
+		xjVhn/6NSAbW17EC51lu1527+uY=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tNOQnuqNZ3zgQB2zNMGxqWWq9Ec=
+		bJrCaUUYqQJFFl4O2ghWjEBZjGw=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		47tnXX55PXdZ4kfQHdR37CQ2Q58=
+		+m7YogyovC4foCMkUoLKdTSeK4Y=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		2p4ZbfSzySqdrbVkR18bDiqK0ck=
+		xjVhn/6NSAbW17EC51lu1527+uY=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		tNOQnuqNZ3zgQB2zNMGxqWWq9Ec=
+		bJrCaUUYqQJFFl4O2ghWjEBZjGw=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		47tnXX55PXdZ4kfQHdR37CQ2Q58=
+		+m7YogyovC4foCMkUoLKdTSeK4Y=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Xl+f4Xh/U5oK8icaCSMsVNfFu+s=
+		zhIHClleudzHxGZB7EVKA2qlFvs=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Jno7u9QbPqjGmO5lFHruOwekNfw=
+		LRj+c1jx7jbdL7qHTAXJBuocud4=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4naIrK6Bl+uvdadfWqP2DAPaiPk=
+		CkuJEdd+4/tsIep4poqzltvydf0=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/i386.swiftdoc</key>
 		<data>
-		Xl+f4Xh/U5oK8icaCSMsVNfFu+s=
+		zhIHClleudzHxGZB7EVKA2qlFvs=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/i386.swiftinterface</key>
 		<data>
-		Jno7u9QbPqjGmO5lFHruOwekNfw=
+		LRj+c1jx7jbdL7qHTAXJBuocud4=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/i386.swiftmodule</key>
 		<data>
-		4naIrK6Bl+uvdadfWqP2DAPaiPk=
+		CkuJEdd+4/tsIep4poqzltvydf0=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Iqa/nQEvRAze0xa4j5U4ghGmjX0=
+		c4nF22yvr0afBO7JDDPq0lYa7wA=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bb1gWNUT9XEjM7C8MGXCHnHzj4k=
+		xUJx4bAqKwlvEbgW3qaeGsAMBjs=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eBE0+xRM20TY94vLD6atsZcWMFE=
+		WDwxe+cXvqfIQ2ePEMVdbyFeK7w=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		Iqa/nQEvRAze0xa4j5U4ghGmjX0=
+		c4nF22yvr0afBO7JDDPq0lYa7wA=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		bb1gWNUT9XEjM7C8MGXCHnHzj4k=
+		xUJx4bAqKwlvEbgW3qaeGsAMBjs=
 		</data>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		eBE0+xRM20TY94vLD6atsZcWMFE=
+		WDwxe+cXvqfIQ2ePEMVdbyFeK7w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,27 +110,43 @@
 		</data>
 		<key>OWCashInConfirmViewController.nib</key>
 		<data>
-		v3cNoIWLmJ02KQY5cXHrWOVOQpo=
+		L4fRJUEzfobgt63Or4s51qUIZZU=
+		</data>
+		<key>OWCashInOTPViewController.nib/objects-11.0+.nib</key>
+		<data>
+		Cl396H8ctBqO0cn2S7et8/vTT94=
+		</data>
+		<key>OWCashInOTPViewController.nib/runtime.nib</key>
+		<data>
+		1sCCxD60W37lYzsmO3JWJiX9VEI=
 		</data>
 		<key>OWCashInViewController.nib/objects-11.0+.nib</key>
 		<data>
-		znkkEDEerS92DXf05JahG7U1NzE=
+		B2z+gPTSa8WJ69FN7Fbl8aTktwQ=
 		</data>
 		<key>OWCashInViewController.nib/runtime.nib</key>
 		<data>
-		fhrNerZficC+sIC7afqQAbCHPFQ=
+		33AnQ5XTLWq9iz4xtE8y7cc6Kuc=
 		</data>
 		<key>OWCashKeyboardView.nib/objects-11.0+.nib</key>
 		<data>
-		DbWixGAYsra2kO3cxseL1ijv38A=
+		H86W/4O97lanFLrRXaaQQ7EuUFo=
 		</data>
 		<key>OWCashKeyboardView.nib/runtime.nib</key>
 		<data>
-		jSr8yMsBYgJmXbgPBXjGLsKNaPI=
+		JsThKklTTIOskdKjCwkIOiMD2ZE=
+		</data>
+		<key>OWEmptyTransactionTableViewCell.nib</key>
+		<data>
+		+HlHPUq0Cmvz5SWqNv8VHpeUVNA=
 		</data>
 		<key>OWErrorViewController.nib</key>
 		<data>
 		UguU32qUUPg9tjZS0/9b0iElPQQ=
+		</data>
+		<key>OWHistoryTransactionTableViewCell.nib</key>
+		<data>
+		SDWY1oJgrkVdiitBYvroYowNC5A=
 		</data>
 		<key>OWHomeHeaderView.nib/objects-11.0+.nib</key>
 		<data>
@@ -142,11 +158,11 @@
 		</data>
 		<key>OWHomeViewController.nib/objects-11.0+.nib</key>
 		<data>
-		fAO2iu+3r0WWrunZojWpna7Kr6c=
+		EbX4m6cl+HAmS1nb5BkXQScw8fw=
 		</data>
 		<key>OWHomeViewController.nib/runtime.nib</key>
 		<data>
-		HnE1fDYWVUI5/iC9AN2oqHwWrFE=
+		egZCN6yZV83sRfgXcovMSbPaogs=
 		</data>
 		<key>OWInputPhoneViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -230,27 +246,27 @@
 		</data>
 		<key>OWPINConfirmViewController.nib</key>
 		<data>
-		u7Gt6E8sZp9KhI6wXk6a//T/W7Y=
+		TEqn5wDNZcTv2BKxZ+qg+6iFzPE=
 		</data>
 		<key>OWPaymentConfirmViewController.nib/objects-11.0+.nib</key>
 		<data>
-		nVy08gv+97+FqKbhN5XJmafSw4Y=
+		dfeReKLBxRlFv8kJmLcjQCq477g=
 		</data>
 		<key>OWPaymentConfirmViewController.nib/runtime.nib</key>
 		<data>
-		gW8n50EeyfMzZmJRxUxck9QOqhE=
+		cS6rixQPpKEm33WFldsKrUhTtS8=
 		</data>
 		<key>OWSelectSourceCashTableViewCell.nib</key>
 		<data>
-		6u/MdtgUgo59kR3AXsJpthoddJo=
+		g5BU/bCgcQzNTxiKbRJMsgKFma4=
 		</data>
 		<key>OWSelectSourceCashViewController.nib/objects-11.0+.nib</key>
 		<data>
-		d3rOCRrN2u6+qVabFKY4ISFNWp0=
+		p7rD0zy/2//0W9hVhQaKbp0BMys=
 		</data>
 		<key>OWSelectSourceCashViewController.nib/runtime.nib</key>
 		<data>
-		/FOWzAlUJv9ScBq7nbL9xjK0FfQ=
+		lxuReqYxpqFnUnOhbOy6xaHI2x8=
 		</data>
 		<key>OWSetPinViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -260,23 +276,39 @@
 		<data>
 		ydnjgufyN2TfuGTfQci7mEwduQw=
 		</data>
+		<key>OWSettingViewController.nib/objects-11.0+.nib</key>
+		<data>
+		XLpK2neXDNiccH90xTJiSwVegaA=
+		</data>
+		<key>OWSettingViewController.nib/runtime.nib</key>
+		<data>
+		5b61NInH2CxY356zVoESwPcfHq8=
+		</data>
 		<key>OWTermsOfUseViewController.nib</key>
 		<data>
 		rf+XvQJx630nj99q6RORv0DrpwQ=
 		</data>
 		<key>OWTransactionDetailViewController.nib/objects-11.0+.nib</key>
 		<data>
-		XnxSP+wBUod3SjYk8XnQggvhL2E=
+		Axhf3tK7stG6WGOIG/eniWMyS5s=
 		</data>
 		<key>OWTransactionDetailViewController.nib/runtime.nib</key>
 		<data>
-		t+rWzlRJDTqj+R5YxPbipY2xXK0=
+		pMHX7InOgtpkJW8Gd+Le+OM2sFQ=
+		</data>
+		<key>OWWebViewController.nib/objects-11.0+.nib</key>
+		<data>
+		8U+TvOTtiPt5IsZiVDj+AM/1+kc=
+		</data>
+		<key>OWWebViewController.nib/runtime.nib</key>
+		<data>
+		Ddwsmf2ctsi+O+DQgsFPbLGCTsM=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2r96Pn39WcY/HxeX+yqEtvoZRkI=
+			sVJGGfs3zIIhENxcgCENnJT+X68=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -285,7 +317,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Inr2xMTNiPPGmIwuMqxY54YXq0g=
+			2jjgK5boSlY3YiohPHy+K20Yh34=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -297,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YwqPWr/QGaDL8+cVhk/i2pmD3uU=
+			0R3RAp/qLG1MfJWj9qpbub+Nf0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			GiBkxVFD0Tym9q2lYjvxCv+y39OQxZREctCHQqeYYp0=
+			UAEOk+jcPHygozJ5i6p27GmFmytpyqpcqMbfRhFcdHM=
 			</data>
 		</dict>
 		<key>DatePickerView.nib/objects-14.0+.nib</key>
@@ -319,22 +351,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xnJ/BKFFUgce4Nfvxe9lhZPMOhc=
+			8oIOMlszWYjph+ccZ86kP/i8uL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			m52GJU2yJCuzs2Exj1DMi9Cbc0rBc8KMZFoWNo+BeIw=
+			xSQVEc8K6/ez26X4IE44km6lIKn8IPhB1TSN/z/2PJU=
 			</data>
 		</dict>
 		<key>Headers/GpayWAAS-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+8U7xUm5P+wMmPWxtI+qr2fpmKk=
+			6AxLO+sNUX3LLTAjOcCVsBSZ7Po=
 			</data>
 			<key>hash2</key>
 			<data>
-			j8l35MgpQR5UuEoYESbSoGzNDXnLl6yhlJdmqWoPwKg=
+			yuTxFisc1pYBE0bbjmOgjq/pn32c0BohVAR31FRbJQQ=
 			</data>
 		</dict>
 		<key>Headers/GpayWAASSDK.h</key>
@@ -352,198 +384,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2p4ZbfSzySqdrbVkR18bDiqK0ck=
+			xjVhn/6NSAbW17EC51lu1527+uY=
 			</data>
 			<key>hash2</key>
 			<data>
-			XyPiupDkaIyg7rXkJnUvq4V6PSKz9LQ16oHyLuqIWS4=
+			OeBj+MNVVSVnwCPkdYFQCpMmgDbsF7F8aBc7LngX0+8=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tNOQnuqNZ3zgQB2zNMGxqWWq9Ec=
+			bJrCaUUYqQJFFl4O2ghWjEBZjGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			u4bj1xaCVdzjLc9VFgUvX3XPhf07hpEhENQ7UKpVwVo=
+			YFpzfQ4lr3z86QC9lIxToCy+mzAzx6Wl8NjwnQ/JZLM=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			47tnXX55PXdZ4kfQHdR37CQ2Q58=
+			+m7YogyovC4foCMkUoLKdTSeK4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			KCSBoPcZMRi51OBQcxr23dGBzTYBuwG1k5uAjLojZzU=
+			zVhPBsl6q9OFPLjKzZTBBs5iYDIvA99QzSvQmTHOIlY=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2p4ZbfSzySqdrbVkR18bDiqK0ck=
+			xjVhn/6NSAbW17EC51lu1527+uY=
 			</data>
 			<key>hash2</key>
 			<data>
-			XyPiupDkaIyg7rXkJnUvq4V6PSKz9LQ16oHyLuqIWS4=
+			OeBj+MNVVSVnwCPkdYFQCpMmgDbsF7F8aBc7LngX0+8=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tNOQnuqNZ3zgQB2zNMGxqWWq9Ec=
+			bJrCaUUYqQJFFl4O2ghWjEBZjGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			u4bj1xaCVdzjLc9VFgUvX3XPhf07hpEhENQ7UKpVwVo=
+			YFpzfQ4lr3z86QC9lIxToCy+mzAzx6Wl8NjwnQ/JZLM=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			47tnXX55PXdZ4kfQHdR37CQ2Q58=
+			+m7YogyovC4foCMkUoLKdTSeK4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			KCSBoPcZMRi51OBQcxr23dGBzTYBuwG1k5uAjLojZzU=
+			zVhPBsl6q9OFPLjKzZTBBs5iYDIvA99QzSvQmTHOIlY=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xl+f4Xh/U5oK8icaCSMsVNfFu+s=
+			zhIHClleudzHxGZB7EVKA2qlFvs=
 			</data>
 			<key>hash2</key>
 			<data>
-			hZWtgXsN1gwn1iWVablJVgRTBQK6ug+syaDNjvU7lzA=
+			2Yhh73CRDHDqyJLBOyIF4c/rw1C65j4KuZrRxwuwcdQ=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jno7u9QbPqjGmO5lFHruOwekNfw=
+			LRj+c1jx7jbdL7qHTAXJBuocud4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mcxLVMoP67pB40pWUPL7CXTdfKlTAfycrfAnyonBPpg=
+			9WZsSzQt6RNau33Aj1Wnd5026Ef+66FtJevuNhqW2uM=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4naIrK6Bl+uvdadfWqP2DAPaiPk=
+			CkuJEdd+4/tsIep4poqzltvydf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9jnfFi7i7lMz7OaNYrB3EedIr8n0jhu0Ov4rBSAqpno=
+			OedfTrhN7/7J9TY7pmFJXYe8nuX+ckNQ76JVgQkKvAY=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xl+f4Xh/U5oK8icaCSMsVNfFu+s=
+			zhIHClleudzHxGZB7EVKA2qlFvs=
 			</data>
 			<key>hash2</key>
 			<data>
-			hZWtgXsN1gwn1iWVablJVgRTBQK6ug+syaDNjvU7lzA=
+			2Yhh73CRDHDqyJLBOyIF4c/rw1C65j4KuZrRxwuwcdQ=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jno7u9QbPqjGmO5lFHruOwekNfw=
+			LRj+c1jx7jbdL7qHTAXJBuocud4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mcxLVMoP67pB40pWUPL7CXTdfKlTAfycrfAnyonBPpg=
+			9WZsSzQt6RNau33Aj1Wnd5026Ef+66FtJevuNhqW2uM=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4naIrK6Bl+uvdadfWqP2DAPaiPk=
+			CkuJEdd+4/tsIep4poqzltvydf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			9jnfFi7i7lMz7OaNYrB3EedIr8n0jhu0Ov4rBSAqpno=
+			OedfTrhN7/7J9TY7pmFJXYe8nuX+ckNQ76JVgQkKvAY=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Iqa/nQEvRAze0xa4j5U4ghGmjX0=
+			c4nF22yvr0afBO7JDDPq0lYa7wA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cX3J8hTatTnA/M3NgNG/B6455OezWKVASxs9eN/NjCc=
+			+rmijrQfr864KqfV5RQM5xNzdHAqxeK6C2AZvzvy9K4=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bb1gWNUT9XEjM7C8MGXCHnHzj4k=
+			xUJx4bAqKwlvEbgW3qaeGsAMBjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6EUqS7bSf5F83epCZywDFittESVw6EGrxOlQHE4XyA8=
+			qeMwNP4x9+QOrfiME+u12lOiEpAqy/NA3PeRxIZ1phM=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eBE0+xRM20TY94vLD6atsZcWMFE=
+			WDwxe+cXvqfIQ2ePEMVdbyFeK7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			yGrjTMoRk4Ti6TXUqdIAibbLAYyZsYYFo1gmEgrihYg=
+			nL+odbQXTzmjlkZ4V3Cq/RpWn8F+j3inRMgEGh98Hmk=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Iqa/nQEvRAze0xa4j5U4ghGmjX0=
+			c4nF22yvr0afBO7JDDPq0lYa7wA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cX3J8hTatTnA/M3NgNG/B6455OezWKVASxs9eN/NjCc=
+			+rmijrQfr864KqfV5RQM5xNzdHAqxeK6C2AZvzvy9K4=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bb1gWNUT9XEjM7C8MGXCHnHzj4k=
+			xUJx4bAqKwlvEbgW3qaeGsAMBjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6EUqS7bSf5F83epCZywDFittESVw6EGrxOlQHE4XyA8=
+			qeMwNP4x9+QOrfiME+u12lOiEpAqy/NA3PeRxIZ1phM=
 			</data>
 		</dict>
 		<key>Modules/GpayWAAS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eBE0+xRM20TY94vLD6atsZcWMFE=
+			WDwxe+cXvqfIQ2ePEMVdbyFeK7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			yGrjTMoRk4Ti6TXUqdIAibbLAYyZsYYFo1gmEgrihYg=
+			nL+odbQXTzmjlkZ4V3Cq/RpWn8F+j3inRMgEGh98Hmk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -572,55 +604,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v3cNoIWLmJ02KQY5cXHrWOVOQpo=
+			L4fRJUEzfobgt63Or4s51qUIZZU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zst13uKgaOgoHmEaKFoNNLuVVYkIbyzbGh2kplliuaI=
+			yCXYg5PuTIrmHOl4xs3eov5o8voyo/Tfs+sb8z1z/+w=
+			</data>
+		</dict>
+		<key>OWCashInOTPViewController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cl396H8ctBqO0cn2S7et8/vTT94=
+			</data>
+			<key>hash2</key>
+			<data>
+			riBLlfHhAP49QzzwtDTZnvk2LXtCIwQwQfKog3rBFG0=
+			</data>
+		</dict>
+		<key>OWCashInOTPViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1sCCxD60W37lYzsmO3JWJiX9VEI=
+			</data>
+			<key>hash2</key>
+			<data>
+			8d2VXZ0AdJuJmgWK9pqTVCxhwDvXHRQcj7GYcVwF/zw=
 			</data>
 		</dict>
 		<key>OWCashInViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			znkkEDEerS92DXf05JahG7U1NzE=
+			B2z+gPTSa8WJ69FN7Fbl8aTktwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2w6/a84pZxH3vd80rZgnxjsPek9CzsT8gqyBVQiAGP8=
+			PfDIBCee7UCrvWhxgiSx6bA7gvNDJYZMDnouGg31aXg=
 			</data>
 		</dict>
 		<key>OWCashInViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fhrNerZficC+sIC7afqQAbCHPFQ=
+			33AnQ5XTLWq9iz4xtE8y7cc6Kuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			3OXhk+y3xydjNlIouWMhHz+ivSTseR8BkJDfX+TIUJQ=
+			xgVFT8LhEBZ9mki1j58JpJN+HhtF18awbEMVTSVXfb4=
 			</data>
 		</dict>
 		<key>OWCashKeyboardView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DbWixGAYsra2kO3cxseL1ijv38A=
+			H86W/4O97lanFLrRXaaQQ7EuUFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Riy1Ztvx8vajFZnfMh2H75rt5gVZyKLT2pfq7Hxte3Y=
+			V1tAk8zQtTfAtHUQpPo68Uso4/xRTPSQJXF8D9mrQIQ=
 			</data>
 		</dict>
 		<key>OWCashKeyboardView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jSr8yMsBYgJmXbgPBXjGLsKNaPI=
+			JsThKklTTIOskdKjCwkIOiMD2ZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bk0ss1Dfy1LLpduaq7b4SMiaW8pclRXqaZAp8ZwvqQg=
+			+seAdWN/qgCt/aJZz8XVsYQsBZ2t64InlYEl21XG9ww=
+			</data>
+		</dict>
+		<key>OWEmptyTransactionTableViewCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+HlHPUq0Cmvz5SWqNv8VHpeUVNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			KTCTS0bp8W9KQM2zUnkFrz5K8waY5QJ7tBx+dBgAoxw=
 			</data>
 		</dict>
 		<key>OWErrorViewController.nib</key>
@@ -632,6 +697,17 @@
 			<key>hash2</key>
 			<data>
 			zuIOh1TKjj2IPFMPbTjcc1enY9fMN9EDwfuC+G3GfGc=
+			</data>
+		</dict>
+		<key>OWHistoryTransactionTableViewCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SDWY1oJgrkVdiitBYvroYowNC5A=
+			</data>
+			<key>hash2</key>
+			<data>
+			qFhlp97BhvWz0iFsu43ygJNIHUATJh9Hl6E+tfVG0mo=
 			</data>
 		</dict>
 		<key>OWHomeHeaderView.nib/objects-11.0+.nib</key>
@@ -660,22 +736,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fAO2iu+3r0WWrunZojWpna7Kr6c=
+			EbX4m6cl+HAmS1nb5BkXQScw8fw=
 			</data>
 			<key>hash2</key>
 			<data>
-			DDk2PD97ZTN2XM3m8g1R7I0+ynsOPG9rjN16Mzg2YjM=
+			kkXkPnT1hapIunTXP3wLa5X/zwl4EuO3XTw/oOpJSsA=
 			</data>
 		</dict>
 		<key>OWHomeViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HnE1fDYWVUI5/iC9AN2oqHwWrFE=
+			egZCN6yZV83sRfgXcovMSbPaogs=
 			</data>
 			<key>hash2</key>
 			<data>
-			OxK7pKJzT2BIiegOGM8S04UP7JoxducZIY8qsysEYnw=
+			V8rzEfIyvaz/t40Qq1b+RXhfD0bpZWcz7iEstQkTElA=
 			</data>
 		</dict>
 		<key>OWInputPhoneViewController.nib/objects-11.0+.nib</key>
@@ -902,66 +978,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u7Gt6E8sZp9KhI6wXk6a//T/W7Y=
+			TEqn5wDNZcTv2BKxZ+qg+6iFzPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z5HkZL6pzIevx86qP5/XR7w2I2K3rsR73Uro+yAO4vA=
+			LPPY4+wAV5czJ9j16YwzHkS9HR+r+zC15JRadz0j+m0=
 			</data>
 		</dict>
 		<key>OWPaymentConfirmViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nVy08gv+97+FqKbhN5XJmafSw4Y=
+			dfeReKLBxRlFv8kJmLcjQCq477g=
 			</data>
 			<key>hash2</key>
 			<data>
-			myaVYA2+iQvAP1CWA55s3A5PfN9LzOUJG1IULnAml7s=
+			eWoneOCZPI+5stwqLt6ZsabwAfqjFhMS6zJQzW7QI1I=
 			</data>
 		</dict>
 		<key>OWPaymentConfirmViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gW8n50EeyfMzZmJRxUxck9QOqhE=
+			cS6rixQPpKEm33WFldsKrUhTtS8=
 			</data>
 			<key>hash2</key>
 			<data>
-			b5NB3+BuJByzDWyhGtNSza+4pxyZyTGEFQrOKEzaXxM=
+			o8wnjwSsiNudFtLNT+3rT7FMDg16eNhdhmoP9+558oU=
 			</data>
 		</dict>
 		<key>OWSelectSourceCashTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6u/MdtgUgo59kR3AXsJpthoddJo=
+			g5BU/bCgcQzNTxiKbRJMsgKFma4=
 			</data>
 			<key>hash2</key>
 			<data>
-			NURInRxfM1UyYirpjM73hWZhstkCKBmfjqn0mpNvICc=
+			SP8o9bTOFL42RZdBhAdL2GzAZUMXXhHvG+uDeBKTmAo=
 			</data>
 		</dict>
 		<key>OWSelectSourceCashViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d3rOCRrN2u6+qVabFKY4ISFNWp0=
+			p7rD0zy/2//0W9hVhQaKbp0BMys=
 			</data>
 			<key>hash2</key>
 			<data>
-			U7QH9GbU/HkhRN9k9D4sOZT+B5+heqAHymQbosvcLII=
+			IxfbgAZbktgRpV2V2eetrc8xTbLE5EArMH6BQ7qsnlo=
 			</data>
 		</dict>
 		<key>OWSelectSourceCashViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/FOWzAlUJv9ScBq7nbL9xjK0FfQ=
+			lxuReqYxpqFnUnOhbOy6xaHI2x8=
 			</data>
 			<key>hash2</key>
 			<data>
-			k9HlC6fE/azGn/AVE6837xwPxdUbVz0v81ycDrhPOpg=
+			7XR5fWbsrIAJMo55Y5LwYpBFpkQbplQ9qVvPuOkgbUA=
 			</data>
 		</dict>
 		<key>OWSetPinViewController.nib/objects-11.0+.nib</key>
@@ -986,6 +1062,28 @@
 			o0vJ0+z9es/32tWbQYQa7S7lYc0yJmj0sUvpUYADC9o=
 			</data>
 		</dict>
+		<key>OWSettingViewController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XLpK2neXDNiccH90xTJiSwVegaA=
+			</data>
+			<key>hash2</key>
+			<data>
+			s99DIeVG03esgMW5qsz7e4faV5gAZgHn17VblaFcT8g=
+			</data>
+		</dict>
+		<key>OWSettingViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5b61NInH2CxY356zVoESwPcfHq8=
+			</data>
+			<key>hash2</key>
+			<data>
+			YvVvWeGvjDBkrBqFrsN5guXJ3ph5p/YvpffhFSkFs3I=
+			</data>
+		</dict>
 		<key>OWTermsOfUseViewController.nib</key>
 		<dict>
 			<key>hash</key>
@@ -1001,33 +1099,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XnxSP+wBUod3SjYk8XnQggvhL2E=
+			Axhf3tK7stG6WGOIG/eniWMyS5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			vKcOjU8FOibWOk58HeoHjUylB6IZtXi6iZn17T5sD5s=
+			d/j2I3gHk1vowGEtNvbKapakIVwuN+PkXd4oWR+YdtE=
 			</data>
 		</dict>
 		<key>OWTransactionDetailViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t+rWzlRJDTqj+R5YxPbipY2xXK0=
+			pMHX7InOgtpkJW8Gd+Le+OM2sFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qe9XjXgPKbtt+JfksmRNqrnvrwzzKwh4pr5mH7SQVps=
+			Kss9NSoPYBBnUaFpxNVWL07H8JRcYx+nDCWiUQfs9eg=
+			</data>
+		</dict>
+		<key>OWWebViewController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8U+TvOTtiPt5IsZiVDj+AM/1+kc=
+			</data>
+			<key>hash2</key>
+			<data>
+			U1Eos2/HQsaDps2IvY3t0wBID7hhDpxWTvdD9ouNGeY=
+			</data>
+		</dict>
+		<key>OWWebViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ddwsmf2ctsi+O+DQgsFPbLGCTsM=
+			</data>
+			<key>hash2</key>
+			<data>
+			65Ivj8aVq65JkfD391BtzVg61vmuryB85gG9y4hSJ2o=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2r96Pn39WcY/HxeX+yqEtvoZRkI=
+			sVJGGfs3zIIhENxcgCENnJT+X68=
 			</data>
 			<key>hash2</key>
 			<data>
-			cxBwZbrQSc8EHlg3GZtLNmbu2o1rHVLxLyHciPaMiTc=
+			9DWaFG1Vn8uTcalDtVjOZm2aSETaM4l5zOh32mWh/OI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1036,11 +1156,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Inr2xMTNiPPGmIwuMqxY54YXq0g=
+			2jjgK5boSlY3YiohPHy+K20Yh34=
 			</data>
 			<key>hash2</key>
 			<data>
-			KhW9vwkODd/OV3RM7tiANgRz75QQEfatBDHTSdwP1nY=
+			XNzbfpPdGpTk+cnwl4Ec5CWuRNYlpS5SaKRYIdB+lxM=
 			</data>
 			<key>optional</key>
 			<true/>

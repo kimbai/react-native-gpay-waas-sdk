@@ -87,9 +87,9 @@ RCT_EXPORT_METHOD(getUserBalance:(RCTResponseSenderBlock)callback) {
   });
 }
 
-RCT_EXPORT_METHOD(paymentWithAmount:(double)amount phoneNumber:(NSString *)phoneNumber userId:(NSString *)userId callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(payment:(double)amount refId:(NSString *)refId embedData:(NSString *)embedData phoneNumber:(NSString *)phoneNumber userId:(NSString *)userId callback:(RCTResponseSenderBlock)callback) {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[GpayWAASSDK sharedInstance] paymentWithAmount:amount phoneNumber:phoneNumber userId:userId onComplete:^(NSDictionary<NSString *,NSString *> *result) {
+    [[GpayWAASSDK sharedInstance] paymentWithAmount:amount refId:refId embedData:embedData phoneNumber:phoneNumber userId:userId onComplete:^(NSDictionary<NSString *,NSString *> *result) {
       if (result != nil) {
         callback(@[result]);
       } else {
@@ -99,9 +99,15 @@ RCT_EXPORT_METHOD(paymentWithAmount:(double)amount phoneNumber:(NSString *)phone
   });
 }
 
-RCT_EXPORT_METHOD(logout) {
+RCT_EXPORT_METHOD(logout:(RCTResponseSenderBlock)callback) {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[GpayWAASSDK sharedInstance] logout];
+    [[GpayWAASSDK sharedInstance] logoutOnComplete:^(NSDictionary<NSString *,NSString *> *result) {
+      if (result != nil) {
+        callback(@[result]);
+      } else {
+        callback(@[]);
+      }
+    }];
   });
 }
 
