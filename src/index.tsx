@@ -45,6 +45,8 @@ type GpayWaasSdkType = {
     amount: number,
     refId: string,
     embedData: string,
+    callbackUrl: string | undefined,
+    webhookUrl: string | undefined,
     phoneNumber: string,
     userId: string,
     callback: (result: GpayWaasSdkPaymentCallbackType) => void

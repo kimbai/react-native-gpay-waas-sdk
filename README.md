@@ -143,6 +143,8 @@ GpayWaasSdk.getUserBalance((result) => {
 | amount      |                      | number      | amount of transaction    |
 | refId       |                      | string      | reference of transaction |
 | embedData   |                      | string      | embed data               |
+| callbackUrl |                      | string      | callbackUrl              |
+| webhookUrl  |                      | string      | webhookUrl               |
 | phoneNumber |                      | string      | user's phone number      |
 | userId      |                      | string      | user's identifier        |
 | callback    |                      | Callback    | callback when completed  |

@@ -4,6 +4,7 @@
 import AVFoundation
 import Combine
 import CommonCrypto
+import CoreGraphics
 import CryptoKit
 import Foundation
 import LocalAuthentication
@@ -114,7 +115,7 @@ infix operator >>> : AdditionPrecedence
   @objc public func logout(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func getUserStatus(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
   @objc public func getUserBalance(onComplete: ((_ response: [Swift.String : Swift.String]?) -> Swift.Void)?)
-  @objc public func payment(amount: Swift.Double, refId: Swift.String?, embedData: Swift.String?, phoneNumber: Swift.String, userId: Swift.String, onComplete: @escaping ((_ response: [Swift.String : Swift.String]?) -> Swift.Void))
+  @objc public func payment(amount: Swift.Double, refId: Swift.String?, embedData: Swift.String?, callbackUrl: Swift.String?, webhookUrl: Swift.String?, phoneNumber: Swift.String, userId: Swift.String, onComplete: @escaping ((_ response: [Swift.String : Swift.String]?) -> Swift.Void))
   @objc deinit
 }
 extension GpayWAAS.GpayWAASSDKLang : Swift.Equatable {}

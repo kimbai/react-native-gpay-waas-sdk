@@ -87,9 +87,23 @@ RCT_EXPORT_METHOD(getUserBalance:(RCTResponseSenderBlock)callback) {
   });
 }
 
-RCT_EXPORT_METHOD(payment:(double)amount refId:(NSString *)refId embedData:(NSString *)embedData phoneNumber:(NSString *)phoneNumber userId:(NSString *)userId callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(payment:(double)amount
+                  refId:(NSString *)refId
+                  embedData:(NSString *)embedData
+                  callbackUrl:(NSString * _Nullable)callbackUrl
+                  webhookUrl:(NSString * _Nullable)webhookUrl
+                  phoneNumber:(NSString *)phoneNumber
+                  userId:(NSString *)userId
+                  callback:(RCTResponseSenderBlock)callback) {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[GpayWAASSDK sharedInstance] paymentWithAmount:amount refId:refId embedData:embedData phoneNumber:phoneNumber userId:userId onComplete:^(NSDictionary<NSString *,NSString *> *result) {
+    [[GpayWAASSDK sharedInstance] paymentWithAmount:amount
+                                              refId:refId
+                                          embedData:embedData
+                                        callbackUrl:callbackUrl
+                                         webhookUrl:webhookUrl
+                                        phoneNumber:phoneNumber
+                                             userId:userId
+                                         onComplete:^(NSDictionary<NSString *,NSString *> *result) {
       if (result != nil) {
         callback(@[result]);
       } else {

@@ -234,7 +234,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 - (void)logoutOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)getUserBalanceOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
-- (void)paymentWithAmount:(double)amount refId:(NSString * _Nullable)refId embedData:(NSString * _Nullable)embedData phoneNumber:(NSString * _Nonnull)phoneNumber userId:(NSString * _Nonnull)userId onComplete:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)paymentWithAmount:(double)amount refId:(NSString * _Nullable)refId embedData:(NSString * _Nullable)embedData callbackUrl:(NSString * _Nullable)callbackUrl webhookUrl:(NSString * _Nullable)webhookUrl phoneNumber:(NSString * _Nonnull)phoneNumber userId:(NSString * _Nonnull)userId onComplete:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 @end
 
 
@@ -638,7 +638,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 - (void)logoutOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)getUserStatusOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 - (void)getUserBalanceOnComplete:(void (^ _Nullable)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
-- (void)paymentWithAmount:(double)amount refId:(NSString * _Nullable)refId embedData:(NSString * _Nullable)embedData phoneNumber:(NSString * _Nonnull)phoneNumber userId:(NSString * _Nonnull)userId onComplete:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
+- (void)paymentWithAmount:(double)amount refId:(NSString * _Nullable)refId embedData:(NSString * _Nullable)embedData callbackUrl:(NSString * _Nullable)callbackUrl webhookUrl:(NSString * _Nullable)webhookUrl phoneNumber:(NSString * _Nonnull)phoneNumber userId:(NSString * _Nonnull)userId onComplete:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nullable))onComplete;
 @end
 
 
