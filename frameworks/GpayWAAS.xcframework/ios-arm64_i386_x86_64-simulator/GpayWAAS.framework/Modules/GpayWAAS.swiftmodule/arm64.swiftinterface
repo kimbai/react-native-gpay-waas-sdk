@@ -95,6 +95,7 @@ extension UIKit.UIPickerView {
   @objc public static let encryptError: Swift.String
   @objc public static let accountLock: Swift.String
   @objc public static let paymentPending: Swift.String
+  @objc public static let userNotEligible: Swift.String
   @objc public static let success: Swift.String
   @objc public static let tokenExpired: Swift.String
   @objc deinit
