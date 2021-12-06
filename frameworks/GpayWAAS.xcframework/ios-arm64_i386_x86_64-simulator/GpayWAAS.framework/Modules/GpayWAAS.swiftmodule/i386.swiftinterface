@@ -4,6 +4,7 @@
 import AVFoundation
 import Combine
 import CommonCrypto
+import Contacts
 import CoreGraphics
 import Foundation
 import LocalAuthentication
