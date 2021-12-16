@@ -58,7 +58,7 @@ import GpayWaasSdk from "react-native-gpay-waas-sdk";
 Step 2: init SDK with enviroment
 
 ```js
-const env = 'development'; // 'development' | 'sandbox' | 'product',
+const env = 'development'; // 'development' | 'sandbox' | 'staging' | 'product',
 React.useEffect(() => {
   GpayWaasSdk.initSDK(
     env,
