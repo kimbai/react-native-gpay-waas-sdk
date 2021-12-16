@@ -14,6 +14,8 @@ RCT_EXPORT_METHOD(initSDK:(NSString *)enviroment callback:(RCTResponseSenderBloc
       env = GpayWAASSDKEnvDevelopment;
     } else if ([[enviroment lowercaseString] isEqualToString:@"sandbox"]) {
       env = GpayWAASSDKEnvSandbox;
+    } else if ([[enviroment lowercaseString] isEqualToString:@"staging"]) {
+      env = GpayWAASSDKEnvStaging;
     } else {
       env = GpayWAASSDKEnvProduct;
     }
