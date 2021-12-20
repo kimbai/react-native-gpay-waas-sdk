@@ -7,13 +7,17 @@ Gpay WaaS SDK
 ```sh
 yarn add https://github.com/kimbai/react-native-gpay-waas-sdk
 ```
+
 or
+
 ```sh
 npm install --save https://github.com/kimbai/react-native-gpay-waas-sdk
 ```
+
 this package require react-native >= 0.60
 
 ### Android Setup
+
 Adding the following to your android/app/build.gradle file
 
 ```
@@ -33,6 +37,7 @@ cd ios && pod install && cd ..
 ```
 
 Then update your Info.plist with wanted permissions usage descriptions:
+
 ```
 <key>NSCameraUsageDescription</key>
 <string>Need to access your camera to capture a photo and update profile picture.</string>
@@ -43,7 +48,7 @@ Then update your Info.plist with wanted permissions usage descriptions:
 ```sh
 yarn
 yarn example ios
-or 
+or
 yarn example android
 ```
 
@@ -52,20 +57,17 @@ yarn example android
 Step 1: import sdk
 
 ```js
-import GpayWaasSdk from "react-native-gpay-waas-sdk";
+import GpayWaasSdk from 'react-native-gpay-waas-sdk';
 ```
 
 Step 2: init SDK with enviroment
 
 ```js
-const env = 'development'; // 'development' | 'sandbox' | 'staging' | 'product',
+const env = 'development'; // 'sandbox' | 'product',
 React.useEffect(() => {
-  GpayWaasSdk.initSDK(
-    env,
-    (result) => {
-      console.log(result);
-    }
-  );
+  GpayWaasSdk.initSDK(env, (result) => {
+    console.log(result);
+  });
 }, []);
 ```
 
@@ -73,35 +75,35 @@ React.useEffect(() => {
 
 ### Open Home
 
-| Parameters  |             | Type        | Description             |
-| ----------- | ----------- | ----------- | -----------             |
-| userId      |             | string      | user's identifier       |
-| phoneNumber |             | string      | user's phone number     |
-| callback    |             | Callback    | callback when completed |
-|             | code        | string      | result code             |
-|             | message     | string      | result message          |
+| Parameters  |         | Type     | Description             |
+| ----------- | ------- | -------- | ----------------------- |
+| userId      |         | string   | user's identifier       |
+| phoneNumber |         | string   | user's phone number     |
+| callback    |         | Callback | callback when completed |
+|             | code    | string   | result code             |
+|             | message | string   | result message          |
 
 ```js
-GpayWaasSdk.openSDK(
-  userId,
-  phoneNumber,
-  (result) => {
-    console.log(result);
-  }
-);
+GpayWaasSdk.openSDK(userId, phoneNumber, (result) => {
+  console.log(result);
+});
 ```
 
 ### Setup Theme
+
 parameters:
- - theme: 'dark' | 'light'
+
+- theme: 'dark' | 'light'
 
 ```js
 GpayWaasSdk.setupTheme('dark');
 ```
 
 ### Setup Language
+
 parameters:
- - language: 'vi' | 'en'
+
+- language: 'vi' | 'en'
 
 ```js
 GpayWaasSdk.setupLanguage('vi');
@@ -109,12 +111,12 @@ GpayWaasSdk.setupLanguage('vi');
 
 ### Get User Status
 
-| Parameters  |             | Type        | Description             |
-| ----------- | ----------- | ----------- | -----------             |
-| callback    |             | Callback    | callback when completed |
-|             | code        | string      | result code             |
-|             | message     | string      | result message          |
-|             | userStatus  | string      | user's status           |
+| Parameters |            | Type     | Description             |
+| ---------- | ---------- | -------- | ----------------------- |
+| callback   |            | Callback | callback when completed |
+|            | code       | string   | result code             |
+|            | message    | string   | result message          |
+|            | userStatus | string   | user's status           |
 
 ```js
 GpayWaasSdk.getUserStatus((result) => {
@@ -124,34 +126,35 @@ GpayWaasSdk.getUserStatus((result) => {
 
 ### Get User Balance
 
-| Parameters  |             | Type        | Description             |
-| ----------- | ----------- | ----------- | -----------             |
-| callback    |             | Callback    | callback when completed |
-|             | code        | string      | result code             |
-|             | message     | string      | result message          |
-|             | userBalance | string      | user's balance          |
+| Parameters |             | Type     | Description             |
+| ---------- | ----------- | -------- | ----------------------- |
+| callback   |             | Callback | callback when completed |
+|            | code        | string   | result code             |
+|            | message     | string   | result message          |
+|            | userBalance | string   | user's balance          |
 
 ```js
 GpayWaasSdk.getUserBalance((result) => {
   console.log(result);
 });
 ```
+
 ### Payment
 
-| Parameters  |                      | Type        | Description              |
-| ----------- | -----------          | ----------- | -----------              |
-| amount      |                      | number      | amount of transaction    |
-| refId       |                      | string      | reference of transaction |
-| embedData   |                      | string      | embed data               |
-| callbackUrl |                      | string      | callbackUrl              |
-| webhookUrl  |                      | string      | webhookUrl               |
-| phoneNumber |                      | string      | user's phone number      |
-| userId      |                      | string      | user's identifier        |
-| callback    |                      | Callback    | callback when completed  |
-|             | code                 | string      | result code              |
-|             | message              | string      | result message           |
-|             | paymentOrderId       | string      | order Id from Gpay       |
-|             | paymentTransactionId | string      | corresponding refId Gpay |
+| Parameters  |                      | Type     | Description              |
+| ----------- | -------------------- | -------- | ------------------------ |
+| amount      |                      | number   | amount of transaction    |
+| refId       |                      | string   | reference of transaction |
+| embedData   |                      | string   | embed data               |
+| callbackUrl |                      | string   | callbackUrl              |
+| webhookUrl  |                      | string   | webhookUrl               |
+| phoneNumber |                      | string   | user's phone number      |
+| userId      |                      | string   | user's identifier        |
+| callback    |                      | Callback | callback when completed  |
+|             | code                 | string   | result code              |
+|             | message              | string   | result message           |
+|             | paymentOrderId       | string   | order Id from Gpay       |
+|             | paymentTransactionId | string   | corresponding refId Gpay |
 
 ```js
 GpayWaasSdk.payment(amount, refId, embedData, phoneNumber, userId, (result) => {
@@ -161,10 +164,10 @@ GpayWaasSdk.payment(amount, refId, embedData, phoneNumber, userId, (result) => {
 
 ### Logout
 
-| Parameters  |             | Type        | Description             |
-| ----------- | ----------- | ----------- | -----------             |
-| callback    |             | Callback    | callback when completed |
-|             | code        | string      | result code             |
+| Parameters |      | Type     | Description             |
+| ---------- | ---- | -------- | ----------------------- |
+| callback   |      | Callback | callback when completed |
+|            | code | string   | result code             |
 
 ```js
 GpayWaasSdk.logout((result) => {

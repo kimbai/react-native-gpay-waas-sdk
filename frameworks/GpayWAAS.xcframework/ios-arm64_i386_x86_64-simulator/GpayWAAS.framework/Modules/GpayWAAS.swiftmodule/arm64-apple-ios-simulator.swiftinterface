@@ -57,9 +57,7 @@ extension UIKit.UIPickerView {
   public init?(rawValue: GpayWAAS.GpayWAASSDKLang.RawValue)
 }
 @objc public enum GpayWAASSDKEnv : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
-  case development
   case sandbox
-  case staging
   case product
   public typealias RawValue = Swift.String
   public var rawValue: GpayWAAS.GpayWAASSDKEnv.RawValue {

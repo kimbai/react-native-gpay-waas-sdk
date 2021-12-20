@@ -10,12 +10,13 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(initSDK:(NSString *)enviroment callback:(RCTResponseSenderBlock)callback) {
   dispatch_async(dispatch_get_main_queue(), ^{
     GpayWAASSDKEnv env;
-    if ([[enviroment lowercaseString] isEqualToString:@"development"]) {
-      env = GpayWAASSDKEnvDevelopment;
-    } else if ([[enviroment lowercaseString] isEqualToString:@"sandbox"]) {
+//    if ([[enviroment lowercaseString] isEqualToString:@"development"]) {
+//      env = GpayWAASSDKEnvDevelopment;
+//    } else
+      if ([[enviroment lowercaseString] isEqualToString:@"sandbox"]) {
       env = GpayWAASSDKEnvSandbox;
-    } else if ([[enviroment lowercaseString] isEqualToString:@"staging"]) {
-      env = GpayWAASSDKEnvStaging;
+//    } else if ([[enviroment lowercaseString] isEqualToString:@"staging"]) {
+//      env = GpayWAASSDKEnvStaging;
     } else {
       env = GpayWAASSDKEnvProduct;
     }

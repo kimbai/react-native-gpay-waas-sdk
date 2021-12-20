@@ -25,7 +25,7 @@ export interface GpayWaasSdkPaymentCallbackType
 
 type GpayWaasSdkType = {
   initSDK(
-    enviroment: 'development' | 'sandbox' | 'staging' | 'product',
+    enviroment: 'sandbox' | 'product',
     callback?: (result: GpayWaasSdkCallbackType) => void
   ): void;
   setupTheme(theme: 'dark' | 'light'): void;

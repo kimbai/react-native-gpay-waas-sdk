@@ -239,10 +239,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 
 
 typedef SWIFT_ENUM(NSInteger, GpayWAASSDKEnv, open) {
-  GpayWAASSDKEnvDevelopment = 0,
-  GpayWAASSDKEnvSandbox = 1,
-  GpayWAASSDKEnvStaging = 2,
-  GpayWAASSDKEnvProduct = 3,
+  GpayWAASSDKEnvSandbox = 0,
+  GpayWAASSDKEnvProduct = 1,
 };
 
 typedef SWIFT_ENUM(NSInteger, GpayWAASSDKLang, open) {
@@ -646,10 +644,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GpayWAASSDK 
 
 
 typedef SWIFT_ENUM(NSInteger, GpayWAASSDKEnv, open) {
-  GpayWAASSDKEnvDevelopment = 0,
-  GpayWAASSDKEnvSandbox = 1,
-  GpayWAASSDKEnvStaging = 2,
-  GpayWAASSDKEnvProduct = 3,
+  GpayWAASSDKEnvSandbox = 0,
+  GpayWAASSDKEnvProduct = 1,
 };
 
 typedef SWIFT_ENUM(NSInteger, GpayWAASSDKLang, open) {

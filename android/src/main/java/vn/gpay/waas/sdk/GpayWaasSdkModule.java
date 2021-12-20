@@ -33,12 +33,12 @@ public class GpayWaasSdkModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void initSDK(String env, Callback callback) {
     GpayWAASSDK.Enviroment sdkEnv;
-    if (env.toLowerCase().equals("development")) {
-      sdkEnv = GpayWAASSDK.Enviroment.DEVELOPMENT;
-    } else if (env.toLowerCase().equals("sandbox")) {
+//    if (env.toLowerCase().equals("development")) {
+//      sdkEnv = GpayWAASSDK.Enviroment.DEVELOPMENT;
+    if (env.toLowerCase().equals("sandbox")) {
       sdkEnv = GpayWAASSDK.Enviroment.SANDBOX;
-    } else if (env.toLowerCase().equals("staging")) {
-      sdkEnv = GpayWAASSDK.Enviroment.STAG;
+//    } else if (env.toLowerCase().equals("staging")) {
+//      sdkEnv = GpayWAASSDK.Enviroment.STAG;
     } else {
       sdkEnv = GpayWAASSDK.Enviroment.PRODUCT;
     }
